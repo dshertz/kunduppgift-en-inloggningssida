@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hem | Simsällskapet</title>
+</head>
+
+<body>
+    <!-- Hero med login form, header och bottom navigation -->
+    <section class="hero flex-container">
+
+        <nav class="top-nav">
+
+            <!-- Login screen -->
+            <div id="login-screen" class="login-container hidden">
+                <input id="name-field" type="text" placeholder="Namn" name="username" autocomplete="off" spellcheck="false">
+                <input id="password-field" type="text" placeholder="Lösenord" name="password" autocomplete="off" spellcheck="false">
+                <button id="login-button" type="button">Logga in</button>
+            </div>
+
+            <!-- Logged in screen och logout button -->
+            <div id="logged-in-screen" class="login-container hidden">
+                <p id="valkommen-text"></p>
+                <button id="logout-button" type="button">Logga ut</button>
+            </div>
+
+            <!-- Login error screen och retry button -->
+            <div id="login-error-screen" class="login-container hidden">
+                <p id="felaktig-inloggning"></p>
+                <button id="retry-button" type="button">Försök igen</button>
+            </div>
+
+        </nav>
+
+        <!-- Header -->
+        <header class="header">
+            <h1 class="hero-title">Simsällskapet</h1>
+        </header>
+
+        <!-- Bottom navigation -->
+        <section class="bottom-nav">
+            <a href="#footer-regler">
+                <h2>Regler</h2>
+            </a>
+        </section>
+
+    </section>
+
+    <!-- Footer, utrymme för regeltext -->
+    <footer id="footer-regler" class="footer wrapper">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus
+            est exemplis hoc facere longius. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est.
+            Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque quantum adiit
+            periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ergo id est
+            convenienter naturae vivere, a natura discedere. Esse enim quam vellet iniquus iustus poterat
+            inpune. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus
+            est exemplis hoc facere longius. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est.
+            Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque quantum adiit
+            periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ergo id est
+            convenienter naturae vivere, a natura discedere. Esse enim quam vellet iniquus iustus poterat
+            inpune. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
