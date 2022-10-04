@@ -80,7 +80,6 @@ body {
   margin: 0;
 }
 
-/* ändra flexbeteende på login screen till kolumn vid små skärmar  */
 @media screen and (max-width:525px) {
   .login-container {
     display: flex;
@@ -142,13 +141,11 @@ body {
   padding: 20px 20px 20px 20px;
 }
 
-/* begränsa bredden på footern vid breda skärmar */
 .wrapper {
   margin: auto;
   max-width: 75rem
 }
 
-/* dölja objekt i topnav */
 .hidden {
   display: none;
 }
