@@ -6,7 +6,6 @@ const retryButton = document.getElementById("retry-button");
 const keyName = "Sara";
 const keyPassword = "qwe123";
 
-// Klicka login-knappen
 loginButton.addEventListener("click", function () {
 
     if (nameField.value == keyName && passwordField.value == keyPassword) {
@@ -21,18 +20,15 @@ loginButton.addEventListener("click", function () {
     }
 })
 
-// Klicka försök igen-knappen
 retryButton.addEventListener("click", function () {
     location.reload();
 })
 
-// Klicka logga ut-knappen
 logoutButton.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 })
 
-// Kolla ifall inloggad
 function start() {
     if (checkLoggedIn() == null) {
         loggedOut();
@@ -42,18 +38,15 @@ function start() {
     }
 }
 
-// Kolla localStorage ifall inloggad
 function checkLoggedIn() {
     return localStorage.getItem("loggedIn");
 }
 
-// Ifall utloggad, visa login screen
 function loggedOut() {
     const loginScreen = document.getElementById("login-screen");
     loginScreen.classList.remove("hidden");
 }
 
-// ifall inloggad, visa inloggad screen och välkomstmeddelande
 function loggedIn() {
     const loggedInScreen = document.getElementById("logged-in-screen");
     loggedInScreen.classList.remove("hidden");
@@ -66,7 +59,6 @@ function loggedIn() {
     welcomeTextP.appendChild(welcomeText);
 }
 
-// Ifall felaktig inloggningsförsök, visa meddelande och försök igen-knapp
 function loginError() {
     const loginErrorScreen = document.getElementById("login-error-screen");
     loginErrorScreen.classList.remove("hidden");
